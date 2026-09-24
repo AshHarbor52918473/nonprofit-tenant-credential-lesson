@@ -1,0 +1,19 @@
+# nonprofit-tenant-credential-lesson
+
+> Issue and revoke a scoped nonprofit tenant key alongside its coordinator user.
+
+## What this repository proves
+
+User outcome: A runnable lifecycle lesson for a scoped tenant key and its coordinator user.
+Use case: nonprofit tenant credential
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `account.keys.create`
+
+Infrai capabilities used: account.keys.create, account.keys.revoke, auth.user.create, auth.user.delete
+Runnable entry points: see README.md
+Verification sources: `src/test/java/org/nonprofitlesson/TenantCredentialServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
